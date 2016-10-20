@@ -2,10 +2,6 @@
 
 import React    from 'react';
 
-const makerImages = {
-  flavio:  '',//require('../images/docinator.jpg'),
-  kaspar: '',//require('../images/fred.png')
-};
 
 const BotBubbleComponent = ({text, templateVars, className = 'botsinglebubble-component', subClassNames = {txtContainer: 'text'}}) => {
   // ToDo: Template engine implementation
