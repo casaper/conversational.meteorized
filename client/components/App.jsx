@@ -2,8 +2,11 @@
 require('normalize.css/normalize.css');
 require('../styles/Main.scss');
 
-import React    from 'react';
+import React, { Component, PropTypes } from 'react';
+import { createContainer } from 'meteor/react-meteor-data';
 import Scroll   from 'smoothscroll';
+
+import Logs from '../../collections/Logs.js';
 
 // JSON data beeing imported
 import Defaults     from './defaults.json';
@@ -212,4 +215,14 @@ class App extends React.Component {
   }
 }
 
-export default App;
+App.propTypes = {
+  logs: PropTypes.array.isRequired,
+};
+
+export default createContainer(() => {
+  Meteor.subscribe('logs');
+
+  return {
+    logs: Logs.find({}).fetch()
+  };
+}, App);
