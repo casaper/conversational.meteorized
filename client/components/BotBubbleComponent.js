@@ -2,6 +2,10 @@
 
 import React    from 'react';
 
+/**
+ * Dummy to make template vars error free for now
+ */
+const makerImages = {};
 
 const BotBubbleComponent = ({text, templateVars, className = 'botsinglebubble-component', subClassNames = {txtContainer: 'text'}}) => {
   // ToDo: Template engine implementation

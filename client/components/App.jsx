@@ -1,5 +1,5 @@
 // Styles
-// require('normalize.css/normalize.css');
+require('normalize.css/normalize.css');
 require('../styles/Main.scss');
 
 import React    from 'react';
@@ -42,13 +42,15 @@ class App extends React.Component {
     const answerBottom = document.getElementsByClassName('conversation-part')[0].lastChild;
     Scroll(answerBottom);
 
-      // setTimeout(()=>{this.setState({botHere: !this.state.botHerea})}, 3000, this);
   }
-
 
   componentDidMount() {
-    //setTimeout(()=>{this.setState({botHere: !this.state.botHerea})}, 3000, this);
   }
+
+  /**
+   * Callbacks
+   */
+
 
   handleForwardTimeout({index, time = 2000}) {
     // create propper path info for the log
