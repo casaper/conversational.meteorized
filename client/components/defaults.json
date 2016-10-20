@@ -1,0 +1,40 @@
+{
+  "botIdentitys": {
+    "fred": {
+      "id": "fred",
+      "name": "Fred",
+      "avatar": {
+        "alt": "Freds avatar",
+        "title": "Fred"
+      }
+    },
+    "doc": {
+      "id": "doc",
+      "name": "Dokinator",
+      "avatar": {
+        "alt": "Dokinator's avatar",
+        "title": "Dokinator"
+      }
+    }
+  },
+  "user": {
+    "name": "",
+    "email": "",
+    "fever": 37,
+    "avatar": {
+      "src": "${avatars.user}",
+      "alt": "Your Name's avatar",
+      "title": "You"
+    }
+  },
+  "persons": {
+    "flavio": {
+      "name": "Flavio Trolese",
+      "image": ""
+    },
+    "kaspar": {
+      "name": "Kaspar Vollenweider",
+      "image": ""
+    }
+  }
+}
